@@ -70,7 +70,7 @@ Checking Running Containers: If you’re unsure of the container name, you can l
 docker ps
 
 
-GIT CMDS – setting/connecting to remote Repository, Creating Branches and Navigation
+## GIT CMDS – setting/connecting to remote Repository, Creating Branches and Navigation
 
 git status: This command shows the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.
 
@@ -117,14 +117,14 @@ The local branch branchTest is now set to track the remote branch branchTest. Th
 
 
 
-Ruby on Rails
+## Ruby on Rails
 Running rails db:migrate 
 in a Ruby on Rails application applies any pending migrations to your database. Migrations are a way to alter your database schema over time in a consistent and easy way.
 Here’s a quick rundown of what happens when you run this command:
 1.	Pending Migrations: Rails checks for any migration files in the db/migrate directory that haven’t been applied yet.
 2.	Schema Changes: It applies these migrations in the order they were created, making the necessary changes to your database schema.
 3.	Schema Version: Rails updates the schema_migrations table to keep track of which migrations have been run.
-Schema
+### Schema
 In the context of databases, a schema is the structure that defines the organization of data. It includes the definitions of tables, columns, data types, relationships, indexes, and other elements that make up the database. Essentially, the schema is a blueprint of how the database is constructed.
 Here are some key aspects of a schema:
 1.	Tables: These are the basic units of storage in a database, where data is stored in rows and columns.
@@ -134,13 +134,13 @@ Here are some key aspects of a schema:
 5.	Constraints: Rules applied to data in the database to ensure accuracy and integrity (e.g., unique constraints, not null constraints).
 In Ruby on Rails, the schema is typically managed through migrations, which allow you to evolve your database schema over time.
 
-Migration
+### Migration
 In Ruby on Rails, a migration is a way to alter your database schema over time in a consistent and easy manner. Migrations are used to create tables, add columns, change data types, and more. They are written in Ruby and stored in the db/migrate directory of your Rails application.
 Here are some key points about migrations:
 1.	Version Control: Migrations allow you to version control your database schema, making it easier to track changes over time.
 2.	Reversible: Migrations can be rolled back, allowing you to undo changes if something goes wrong.
 3.	Consistency: They ensure that changes to the database schema are applied consistently across different environments (development, test, production).
-Rails Server
+#### Rails Server
 1.	Restart the Server:
 o	You can restart your Rails server by stopping it (usually with Ctrl+C in the terminal) and then starting it again with the command:
 o	rails server
@@ -150,7 +150,7 @@ o	Open your web browser and navigate to http://localhost:3000/students and http:
 o	On the http://localhost:3000/students page, there should be a link or button to create a new student. Click on it and fill out the form to create a new student.
 4.	Check the Server Logs:
 o	After starting the server and performing the actions above, look at the terminal where your server is running. The logs will display the HTTP requests being made.
-Routes, Resources, and HTTP Methods
+#### Routes, Resources, and HTTP Methods
 In a typical Rails application, the routes for the students resource might look like this in your config/routes.rb file:
 Ruby
 resources :students
@@ -162,7 +162,7 @@ This generates the following RESTful routes:
 •	GET /students/:id/edit: Edit action to display a form for editing a student.
 •	PATCH/PUT /students/:id: Update action to update a specific student.
 •	DELETE /students/:id: Destroy action to delete a specific student.
-Example Log Output
+#### Example Log Output
 When you visit http://localhost:3000/students, you might see a log entry like this:
 Started GET "/students" for 127.0.0.1 at 2024-09-25 18:16:56 -0700
 Processing by StudentsController#index as HTML
