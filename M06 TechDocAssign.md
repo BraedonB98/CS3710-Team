@@ -1,18 +1,21 @@
+# CS3710-Team
+Technical Documentation - Agrogate Work
+
 # Git/Github/Docker Documentation (mostly cmd line commands)
 ## List of Headers that need to be modified (actions needed)
-GIT CMDS – There are a couple of Git Cmds missing from mannaul write up. Also there could be better explanations of what is going on. Recap this with 21Saturday Morning summary and manual write up.
+GIT CMDS – There are a couple of Git Cmds missing from the manual write-up. Also, there could be better explanations of what is going on. Recap this with a 21 Saturday Morning summary and manual write-up.
 GIT CMDS – put in why or meaning of the .gitIgnorre
-GIT CMDS – add in why or meaning of the ssh key method
+GIT CMDS – add in why or meaning of the SSH key method
 ## CRUD
 CRUD stands for Create, Read, Update, and Delete. These are the four basic operations you can perform on data in a database. Here’s a quick overview of each operation:
 Create: 
 Adding new records to the database.
-o	Example: Adding a new user to the users table.
+	Example: Adding a new user to the user's table.
 Ruby
 User.create(name: "John Doe", email: "john@example.com")
 Read:
  Retrieving data from the database.
-o	Example: Fetching all users from the users table.
+	Example: Fetching all users from the user's table.
 Ruby
 User.all
 Update: 
